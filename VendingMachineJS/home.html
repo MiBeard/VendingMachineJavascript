@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Web Project</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body style='background-image:url(https://upload.wikimedia.org/wikipedia/commons/6/61/Large_multi-coloured_lollipops%2C_2009.jpg); background-attachment: fixed;
+background-size: cover; padding-top: 30px; padding-bottom: 30px'>
+    <div class="container">
+        <div class='jumbotron' style='border-radius: 25px; margin: auto; border: 3px solid #02cc02; background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e5/Plain-M%26Ms-Pile.jpg); background-size: cover;'>
+            <h1 id='vMHeading' style='padding:1-px; text-align: center; border-radius: 25px; color:#ebf442; background-color:#3b8087; opacity: .85'>
+                Vending Machine
+            </h1>
+        </div>
+        <br/>
+    </div>
+
+    <div class='container'>
+        <div class='row; col-md-9'>
+            <ol style='text-align: center'>
+                <div id='listContent'>
+                    <div id="itemSelected"></div>
+                </div>
+            </ol>
+        </div>
+        <!-- ___________________________________________________________________________________ -->
+        <div class='row; col-md-3' style='border-radius: 25px; border: 3px solid #02cc02; text-align: center; background-image:url(https://upload.wikimedia.org/wikipedia/commons/a/ac/Gobstopper-pile.jpg); background-size: cover; padding-bottom: 20px; padding-top: 15px'>
+            <div class='col-md-12' style='margin:2px'>
+                <h4 id='buttonsHeading' style='background-color:#5fdce8; padding: 10px; border-radius:6px'>
+                    Total $ In:
+                </h4>
+                <input type="text" id='totalChange' style='text-align:center; border-radius: 8px; margin:5px' value='0' readonly>
+                <button class='btn btn-default' value='1.00' id='addDollar' style='width: 90px; margin :5px; padding: 5px; transition-duration:0.15s; background-color:#5fdce8;'>
+                    Add Dollar
+                </button>
+                <button class='btn btn-default' value='.25' id='addQuarter' style='width: 90px; margin :5px; padding: 5px; transition-duration:0.15s; background-color:#5fdce8;'>
+                    Add Quarter
+                </button>
+                <button class='btn btn-default' value='.10' id='addDime' style='width: 90px; margin :5px; padding: 5px; transition-duration:0.15s; background-color:#5fdce8;'>
+                    Add Dime
+                </button>
+                <button class='btn btn-default' value='.05' id='addNickle' style='width: 90px; margin :5px; padding: 5px; transition-duration:0.15s; background-color:#5fdce8;'>
+                    Add Nickle
+                </button>
+                <hr/>
+            </div>
+
+            <div class='col-md-12' style='margin:2px'>
+                <div>
+                    <h4 style='background-color:#5fdce8; padding: 10px; border-radius:6px'>
+                        Messages
+                    </h4>
+                    <input id='itemMessage' type="text" style='text-align:center; border-radius: 10px; width: 170px;height: 50px; margin: 5px'
+                        value='Make a selection' readonly>
+                    <label style='background-color:#5fdce8; border-radius:6px' for="itemNumber">
+                        Item:
+                        <input value='' id='itemNumber' type="text" style='text-align:center; border-radius: 8px;margin: 5px; width: 75px;' readonly>
+                    </label>
+                    <button id='purchase' class='btn btn-default' style='width: 150px; margin :5px; padding: 5px; transition-duration:0.15s; background-color:#5fdce8;'>
+                        Make Purchase
+                    </button>
+                </div>
+            </div>
+
+            <div id='rightSideBottomCol' class='col-md-12' style='margin:2px'>
+                <hr/>
+                <div>
+                    <h4 style='background-color:#5fdce8; padding: 10px; border-radius:6px'>
+                        Change
+                    </h4>
+                    <!-- <textarea type="html" style='width: 150px;height:75px'>
+                    </textarea> -->
+                    <div id='changeBack' type='text' style='border-radius:10px; margin: auto;background-color:white;width:200px; height: 65px; '>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='footer '>
+        <div class='row text-center'>
+            <p style='padding-top: 20px; color:white'>2018 Copyright &copy Matt Beard, Candy Shop</p>
+        </div>
+    </div>
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
